@@ -1,0 +1,42 @@
+.wraper-box {
+	width: 400px;
+	height: 400px;
+	background: lightblue;
+	position: relative;
+
+	/*transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 1s;*/
+    transition: all 0.5s linear 1s;
+}
+.child-box {
+	width: 150px;
+	height: 150px;
+	background: yellow;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg) scale(-1.5, -1.5);
+    /*transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 2s;*/
+    transition: all 3s;
+    animation: mybox 5 infinite;
+}
+/*hover*/
+.wraper-box:hover {
+	background: green;
+
+
+}
+.child-box:hover {
+	background: pink;
+	transform: translate(-50%, -50%) rotate(0deg) scale(1.5, 1.5);
+}
+@keyframes mybox {
+	from {left: 0px; background: red;}
+	to {right: 100% background: grey;}
+}
+	
