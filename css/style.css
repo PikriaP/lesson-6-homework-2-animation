@@ -1,42 +1,81 @@
-.wraper-box {
-	width: 400px;
-	height: 400px;
-	background: lightblue;
-	position: relative;
 
-	/*transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-    transition-delay: 1s;*/
-    transition: all 0.5s linear 1s;
+.background {
+height:100%;
+width:100%;
+background-repeat: no-repeat;
+background-size:cover;
+background-position:center;
+position: relative;
+background-attachment:scroll;
 }
-.child-box {
-	width: 150px;
-	height: 150px;
-	background: yellow;
+html { 
+	background: url(images/Wallpaper1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+.girl {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(45deg) scale(-1.5, -1.5);
-    /*transition-property: all;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    transition-delay: 2s;*/
-    transition: all 3s;
-    animation: mybox 5 infinite;
-}
-/*hover*/
-.wraper-box:hover {
-	background: green;
-
-
-}
-.child-box:hover {
-	background: pink;
-	transform: translate(-50%, -50%) rotate(0deg) scale(1.5, 1.5);
-}
-@keyframes mybox {
-	from {left: 0px; background: red;}
-	to {right: 100% background: grey;}
-}
+	width: 70px;
+	height: 140px;
+	bottom: -13%;
+	left: 0%;
+	animation: girlmoves 10s linear infinite;
+	z-index: 2;
+} 
+.girl2 {
+	position: absolute;
+	width: 120px;
+	height: 140px;
+	bottom: -18%;
+	left: 0%;
+	animation: girlmoves2 3s linear infinite;
+} 
 	
+@keyframes girlmoves {
+	from {right: 0px;}
+	to { left: 63%;}
+}
+@keyframes girlmoves2 {
+	from {right: 0px;}
+	to { left: 100%;}
+}
+/* .MY-GOALS {
+	position: absolute;
+	font-size: 8px;
+	color: black(199, 255, 110);
+	text-transform: uppercase;
+	line-height: initial;
+	
+  } */
+  .animation {
+	position: absolute;
+	animation: animation 2s ease-out infinite;
+  }
+
+#slide-in {
+	text-align: right;
+	color: rgb(10, 10, 10);
+	bottom: 40px;
+	right: 10px;
+  }
+  #slide-in2 {
+	text-align: right;
+	color: rgb(10, 10, 10);
+	bottom: 80px;
+	right: 10px;
+  }
+
+@keyframes animation {
+	0% {
+	  opacity: 0;
+	  right: 0px;
+	}
+
+	100% {
+	  opacity: 1;
+	  right: 20px;
+	}
+  } 
+  
