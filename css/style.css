@@ -1,36 +1,41 @@
 
 .background {
-height:100%;
+/* height:100%;
 width:100%;
 background-repeat: no-repeat;
 background-size:cover;
 background-position:center;
 position: relative;
-background-attachment:scroll;
+background-attachment:scroll; */
+position: fixed;
+    left: -0.1%;
+    top: -0.1%;
+    width: 100%;
+    height: 100%;
 }
-html { 
+/* html { 
 	background: url(images/Wallpaper1.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-  }
+  } */
 .girl {
 	position: absolute;
 	width: 70px;
 	height: 140px;
-	bottom: -13%;
+	bottom: -1%;
 	left: 0%;
 	animation: girlmoves 10s linear infinite;
 	z-index: 2;
 } 
 .girl2 {
 	position: absolute;
-	width: 120px;
-	height: 140px;
-	bottom: -18%;
-	left: 0%;
-	animation: girlmoves2 3s linear infinite;
+	width: 100px;
+	height: 100px;
+	bottom: -1%;
+	left: -30%;
+	animation: girlmoves2 10s linear infinite;
 } 
 	
 @keyframes girlmoves {
@@ -41,29 +46,32 @@ html {
 	from {right: 0px;}
 	to { left: 100%;}
 }
-/* .MY-GOALS {
-	position: absolute;
-	font-size: 8px;
-	color: black(199, 255, 110);
-	text-transform: uppercase;
-	line-height: initial;
-	
-  } */
+
   .animation {
 	position: absolute;
-	animation: animation 2s ease-out infinite;
+	animation: animation 10s linear infinite;
   }
+
+  .h4me {
+    position: absolute;
+	width: 10px;
+	height: 100px;
+	bottom: 55%;
+	left: 45%;
+	animation: h4me 10s linear infinite;
+	z-index: 2;
+	  }
 
 #slide-in {
 	text-align: right;
-	color: rgb(10, 10, 10);
-	bottom: 40px;
+	color: rgb(54, 2, 65);
+	bottom: 80px;
 	right: 10px;
   }
   #slide-in2 {
 	text-align: right;
-	color: rgb(10, 10, 10);
-	bottom: 80px;
+	color: rgb(87, 3, 90);
+	bottom: 110px;
 	right: 10px;
   }
 
@@ -78,4 +86,8 @@ html {
 	  right: 20px;
 	}
   } 
+  @keyframes h4me {
+	from {right: 0px;}
+	to { left: 63%;}
+}
   
