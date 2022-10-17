@@ -22,8 +22,8 @@ position: fixed;
   } */
 .girl {
 	position: absolute;
-	width: 70px;
-	height: 140px;
+	width: 40%;
+	height: 70%;
 	bottom: -1%;
 	left: 0%;
 	animation: girlmoves 10s linear infinite;
@@ -31,8 +31,8 @@ position: fixed;
 } 
 .girl2 {
 	position: absolute;
-	width: 100px;
-	height: 100px;
+	width: 55%;
+	height: 55%;
 	bottom: -1%;
 	left: -30%;
 	animation: girlmoves2 10s linear infinite;
@@ -57,7 +57,7 @@ position: fixed;
 	width: 10px;
 	height: 100px;
 	bottom: 55%;
-	left: 45%;
+	left: 25%;
 	animation: h4me 10s linear infinite;
 	z-index: 2;
 	  }
