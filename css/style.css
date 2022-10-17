@@ -40,11 +40,11 @@ position: fixed;
 	
 @keyframes girlmoves {
 	from {right: 0px;}
-	to { left: 63%;}
+	to { left: 50%;}
 }
 @keyframes girlmoves2 {
 	from {right: 0px;}
-	to { left: 100%;}
+	to { left: 50%;}
 }
 
   .animation {
@@ -52,27 +52,21 @@ position: fixed;
 	animation: animation 10s linear infinite;
   }
 
-  .h4me {
-    position: absolute;
-	width: 10px;
-	height: 100px;
-	bottom: 55%;
-	left: 25%;
-	animation: h4me 10s linear infinite;
-	z-index: 2;
-	  }
-
 #slide-in {
 	text-align: right;
+	font-size: 26px;
+	font-style: bold;
 	color: rgb(54, 2, 65);
-	bottom: 80px;
-	right: 10px;
+	bottom: 40%;
+	right: 40%;
   }
   #slide-in2 {
 	text-align: right;
+	font-size: 26px;
+	font-style: bold;
 	color: rgb(87, 3, 90);
-	bottom: 110px;
-	right: 10px;
+	bottom: 50%;
+	right: 40%;
   }
 
 @keyframes animation {
